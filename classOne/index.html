@@ -5,19 +5,80 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Jquery Practice</title>
+
 		<link rel="stylesheet" href="style.css" />
+		<script
+			src="https://kit.fontawesome.com/560b9ded06.js"
+			crossorigin="anonymous"
+		></script>
 	</head>
 	<body>
-		<h1 class="demo">This is Demo Text</h1>
-		<div class="div1">
-			<h1>Bangladesh</h1>
+		<div class="header">
+			<h1>We will learn in this tutorial those mathod for jQuery</h1>
+			<h2><code>.text()</code></h2>
+			<h2><code>.html()</code></h2>
+			<h2><code>.append()</code></h2>
+			<h2><code>.prepend()</code></h2>
+			<h2><code>.before()</code></h2>
+			<h2><code>.after()</code></h2>
 		</div>
-		<h1 id="demo2">hello Bangladesh</h1>
-		<h2 id="demo3">My Name is Saifllah</h2>
-		<h3 class="demo4">Md Saifullah and</h3>
-		<h4 class="demo5">Saiful</h4>
-		<p class="para1">This is paragraph 1</p>
+		<div class="example1">
+			<h3>
+				1st Example <code style="color: brown">.text()</code> =
+				<code style="color: brown">
+					< p class="demo" > Hello Bangladesh < /p></code
+				>
+				<hr />
+			</h3>
+			<b
+				><h1>
+					JS CODE =
+					<code
+						>document.querySelector(".demo").innerHtml = "text changed"</code
+					>
+				</h1></b
+			>
 
+			<b
+				><h1>JQUERY CODE = <code>$(".demo").text("text changed")</code></h1></b
+			>
+			<button onclick="example1()">Real Time Example</button>
+			<i class="fa-solid fa-arrow-right"></i>
+
+			<p
+				class="demo1"
+				style="
+					display: inline;
+					margin-left: 25px;
+					border: 1px solid black;
+					padding: 10px;
+				"
+			>
+				Hello Bangladesh
+			</p>
+		</div>
+		<br />
+		<hr />
+		<div class="example2">
+			<h3>2nd example <code style="color: brown">.html() </code></h3>
+			<h2>
+				#. If you want to use "html" tag in the changeline you have to use
+				<code style="color: brown">.html()</code> mathod.
+			</h2>
+			<button onclick="example2()">Real Time Example</button>
+			<i class="fa-solid fa-arrow-right"></i>
+			<p
+				class="demo2"
+				style="
+					display: inline;
+					margin-left: 25px;
+					border: 1px solid black;
+					padding: 10px;
+				"
+			>
+				Hello Bangladesh
+			</p>
+		</div>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 		<script src="index.js"></script>
 	</body>
